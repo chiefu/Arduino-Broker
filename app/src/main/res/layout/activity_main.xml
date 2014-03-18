@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="pl.chiefu.arduino_broker.app.MainActivity"
+    android:background="#2c3e52">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:id="@+id/buttonStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="buttonStartClick"
+        android:layout_alignParentRight="true"
+        android:textColor="#dcddde" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/buttonStart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/buttonStart"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:scrollHorizontally="true">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:layout_alignBottom="@+id/scrollView"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:padding="6dp"
+            android:typeface="monospace"
+            android:textColor="#dcddde"
+            android:textSize="12dp"
+            android:textIsSelectable="true" />
+    </ScrollView>
+
+</RelativeLayout>
